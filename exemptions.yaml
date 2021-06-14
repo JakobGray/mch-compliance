@@ -1,0 +1,35 @@
+exemptions:
+  deployments:
+    - name: "multicluster-observability-operator"
+      checks:
+        - "*"
+    - name: "multicluster-operators-application"
+      checks:
+        - "*"
+    - name: "multicluster-operators-channel"
+      checks:
+        - "*"
+    - name: "multicluster-operators-hub-subscription"
+      checks:
+        - "*"
+    - name: "multicluster-operators-standalone-subscription"
+      checks:
+        - "*"
+    - name: "multiclusterhub-operator"
+      checks:
+        - "*"
+    - name: "acm-custom-registry"
+      checks:
+        - "*"
+    - name: "hive-operator"
+      checks:
+        - "*"
+    - name: "submariner-addon"
+      checks:
+        - "*"
+    - name: "cluster-manager"
+      checks:
+        - "*"
+    - name: "multiclusterhub-repo"
+      checks:
+        - "customServiceAccount"
