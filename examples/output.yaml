@@ -1,0 +1,183 @@
+deployments:
+- name: acm-custom-registry
+  checks: []
+- name: application-chart-ac15f-applicationui
+  checks: []
+- name: application-chart-ac15f-consoleapi
+  checks: []
+- name: assisted-service-operator
+  checks: []
+- name: cluster-curator-controller
+  checks: []
+- name: cluster-manager
+  checks: []
+- name: clusterlifecycle-state-metrics-v2
+  checks:
+  - category: AntiAffinity
+    rule: antiAffinityLabelSet
+    message: missing the `ocm-antiaffinity-selector` label
+  - category: AntiAffinity
+    rule: antiAffinityLabelSet
+    message: missing pod affinity field
+  - category: SecurityPolicy
+    rule: runAsNonRootSetToFalse
+    message: RunAsNonRoot is not true
+- name: console-chart-d9e84-console-v2
+  checks: []
+- name: console-header
+  checks:
+  - category: SecurityPolicy
+    rule: runAsNonRootSetToFalse
+    message: RunAsNonRoot is not true
+- name: discovery-operator
+  checks: []
+- name: grc-e77ca-grcui
+  checks: []
+- name: grc-e77ca-grcuiapi
+  checks: []
+- name: grc-e77ca-policy-propagator
+  checks: []
+- name: hive-operator
+  checks: []
+- name: insights-chart-f20e7-insights-client
+  checks: []
+- name: insights-chart-f20e7-insights-metrics
+  checks: []
+- name: klusterlet-addon-controller-v2
+  checks: []
+- name: kui-web-terminal
+  checks:
+  - category: SecurityPolicy
+    rule: runAsNonRootSetToFalse
+    message: RunAsNonRoot is not true
+  - category: SecurityPolicy
+    rule: readOnlyRootFilesystemSetToTrue
+    message: 'Container ''kui-proxy'': ReadOnlyRootFilesystem is not true'
+  - category: SecurityPolicy
+    rule: capabilitiesDropped
+    message: 'Container ''kui-proxy'': Capabilities not dropped'
+- name: managedcluster-import-controller-v2
+  checks: []
+- name: management-ingress-00b22
+  checks:
+  - category: SecurityPolicy
+    rule: runAsNonRootSetToFalse
+    message: RunAsNonRoot is not true
+  - category: SecurityPolicy
+    rule: allowPrivilegeEscalationSetToFalse
+    message: 'Container ''oauth-proxy'': AllowPrivilegeEscalation is not false'
+  - category: SecurityPolicy
+    rule: privilegedSetToFalse
+    message: 'Container ''oauth-proxy'': Privileged is not false'
+  - category: SecurityPolicy
+    rule: readOnlyRootFilesystemSetToTrue
+    message: 'Container ''oauth-proxy'': ReadOnlyRootFilesystem is not true'
+  - category: SecurityPolicy
+    rule: capabilitiesDropped
+    message: 'Container ''oauth-proxy'': Capabilities not dropped'
+  - category: SecurityPolicy
+    rule: allowPrivilegeEscalationSetToFalse
+    message: 'Container ''management-ingress-00b22'': AllowPrivilegeEscalation is
+      not false'
+  - category: SecurityPolicy
+    rule: privilegedSetToFalse
+    message: 'Container ''management-ingress-00b22'': Privileged is not false'
+  - category: SecurityPolicy
+    rule: readOnlyRootFilesystemSetToTrue
+    message: 'Container ''management-ingress-00b22'': ReadOnlyRootFilesystem is not
+      true'
+  - category: SecurityPolicy
+    rule: capabilitiesDropped
+    message: 'Container ''management-ingress-00b22'': Capabilities not dropped'
+- name: multicluster-observability-operator
+  checks: []
+- name: multicluster-operators-application
+  checks: []
+- name: multicluster-operators-channel
+  checks: []
+- name: multicluster-operators-hub-subscription
+  checks: []
+- name: multicluster-operators-standalone-subscription
+  checks: []
+- name: multiclusterhub-operator
+  checks: []
+- name: multiclusterhub-repo
+  checks:
+  - category: AntiAffinity
+    rule: antiAffinitySet
+    message: missing podAntiAffinity topology.kubernetes.io/zone
+  - category: SecurityPolicy
+    rule: runAsNonRootSetToFalse
+    message: RunAsNonRoot is not true
+  - category: SecurityPolicy
+    rule: securityContextSet
+    message: 'Container ''multiclusterhub-repo'': missing SecurityContext'
+- name: ocm-controller
+  checks:
+  - category: AntiAffinity
+    rule: antiAffinitySet
+    message: missing podAntiAffinity topology.kubernetes.io/zone
+  - category: SecurityPolicy
+    rule: runAsNonRootSetToFalse
+    message: RunAsNonRoot is not true
+  - category: SecurityPolicy
+    rule: securityContextSet
+    message: 'Container ''ocm-controller'': missing SecurityContext'
+- name: ocm-proxyserver
+  checks:
+  - category: AntiAffinity
+    rule: antiAffinitySet
+    message: missing podAntiAffinity topology.kubernetes.io/zone
+  - category: SecurityPolicy
+    rule: runAsNonRootSetToFalse
+    message: RunAsNonRoot is not true
+  - category: SecurityPolicy
+    rule: securityContextSet
+    message: 'Container ''ocm-proxyserver'': missing SecurityContext'
+- name: ocm-webhook
+  checks:
+  - category: AntiAffinity
+    rule: antiAffinitySet
+    message: missing podAntiAffinity topology.kubernetes.io/zone
+  - category: SecurityPolicy
+    rule: runAsNonRootSetToFalse
+    message: RunAsNonRoot is not true
+  - category: SecurityPolicy
+    rule: securityContextSet
+    message: 'Container ''ocm-webhook'': missing SecurityContext'
+- name: provider-credential-controller
+  checks:
+  - category: AntiAffinity
+    rule: antiAffinityLabelSet
+    message: missing the `ocm-antiaffinity-selector` label
+  - category: AntiAffinity
+    rule: antiAffinitySet
+    message: missing podAntiAffinity kubernetes.io/hostname
+  - category: AntiAffinity
+    rule: antiAffinitySet
+    message: missing podAntiAffinity topology.kubernetes.io/zone
+- name: search-operator
+  checks:
+  - category: AntiAffinity
+    rule: antiAffinitySet
+    message: missing podAntiAffinity kubernetes.io/hostname
+  - category: AntiAffinity
+    rule: antiAffinitySet
+    message: missing podAntiAffinity topology.kubernetes.io/zone
+  - category: SecurityPolicy
+    rule: runAsNonRootSetToFalse
+    message: RunAsNonRoot is not true
+  - category: SecurityPolicy
+    rule: securityContextSet
+    message: 'Container ''search-operator'': missing SecurityContext'
+- name: search-prod-6e997-search-aggregator
+  checks: []
+- name: search-prod-6e997-search-api
+  checks: []
+- name: search-prod-6e997-search-collector
+  checks: []
+- name: search-ui
+  checks: []
+- name: submariner-addon
+  checks: []
+

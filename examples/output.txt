@@ -1,0 +1,35 @@
+[clusterlifecycle-state-metrics-v2][AntiAffinity][antiAffinityLabelSet] missing the `ocm-antiaffinity-selector` label
+[clusterlifecycle-state-metrics-v2][AntiAffinity][antiAffinityLabelSet] missing pod affinity field
+[clusterlifecycle-state-metrics-v2][SecurityPolicy][runAsNonRootSetToFalse] RunAsNonRoot is not true
+[console-header][SecurityPolicy][runAsNonRootSetToFalse] RunAsNonRoot is not true
+[kui-web-terminal][SecurityPolicy][runAsNonRootSetToFalse] RunAsNonRoot is not true
+[kui-web-terminal][SecurityPolicy][readOnlyRootFilesystemSetToTrue] Container 'kui-proxy': ReadOnlyRootFilesystem is not true
+[kui-web-terminal][SecurityPolicy][capabilitiesDropped] Container 'kui-proxy': Capabilities not dropped
+[management-ingress-00b22][SecurityPolicy][runAsNonRootSetToFalse] RunAsNonRoot is not true
+[management-ingress-00b22][SecurityPolicy][allowPrivilegeEscalationSetToFalse] Container 'oauth-proxy': AllowPrivilegeEscalation is not false
+[management-ingress-00b22][SecurityPolicy][privilegedSetToFalse] Container 'oauth-proxy': Privileged is not false
+[management-ingress-00b22][SecurityPolicy][readOnlyRootFilesystemSetToTrue] Container 'oauth-proxy': ReadOnlyRootFilesystem is not true
+[management-ingress-00b22][SecurityPolicy][capabilitiesDropped] Container 'oauth-proxy': Capabilities not dropped
+[management-ingress-00b22][SecurityPolicy][allowPrivilegeEscalationSetToFalse] Container 'management-ingress-00b22': AllowPrivilegeEscalation is not false
+[management-ingress-00b22][SecurityPolicy][privilegedSetToFalse] Container 'management-ingress-00b22': Privileged is not false
+[management-ingress-00b22][SecurityPolicy][readOnlyRootFilesystemSetToTrue] Container 'management-ingress-00b22': ReadOnlyRootFilesystem is not true
+[management-ingress-00b22][SecurityPolicy][capabilitiesDropped] Container 'management-ingress-00b22': Capabilities not dropped
+[multiclusterhub-repo][AntiAffinity][antiAffinitySet] missing podAntiAffinity topology.kubernetes.io/zone
+[multiclusterhub-repo][SecurityPolicy][runAsNonRootSetToFalse] RunAsNonRoot is not true
+[multiclusterhub-repo][SecurityPolicy][securityContextSet] Container 'multiclusterhub-repo': missing SecurityContext
+[ocm-controller][AntiAffinity][antiAffinitySet] missing podAntiAffinity topology.kubernetes.io/zone
+[ocm-controller][SecurityPolicy][runAsNonRootSetToFalse] RunAsNonRoot is not true
+[ocm-controller][SecurityPolicy][securityContextSet] Container 'ocm-controller': missing SecurityContext
+[ocm-proxyserver][AntiAffinity][antiAffinitySet] missing podAntiAffinity topology.kubernetes.io/zone
+[ocm-proxyserver][SecurityPolicy][runAsNonRootSetToFalse] RunAsNonRoot is not true
+[ocm-proxyserver][SecurityPolicy][securityContextSet] Container 'ocm-proxyserver': missing SecurityContext
+[ocm-webhook][AntiAffinity][antiAffinitySet] missing podAntiAffinity topology.kubernetes.io/zone
+[ocm-webhook][SecurityPolicy][runAsNonRootSetToFalse] RunAsNonRoot is not true
+[ocm-webhook][SecurityPolicy][securityContextSet] Container 'ocm-webhook': missing SecurityContext
+[provider-credential-controller][AntiAffinity][antiAffinityLabelSet] missing the `ocm-antiaffinity-selector` label
+[provider-credential-controller][AntiAffinity][antiAffinitySet] missing podAntiAffinity kubernetes.io/hostname
+[provider-credential-controller][AntiAffinity][antiAffinitySet] missing podAntiAffinity topology.kubernetes.io/zone
+[search-operator][AntiAffinity][antiAffinitySet] missing podAntiAffinity kubernetes.io/hostname
+[search-operator][AntiAffinity][antiAffinitySet] missing podAntiAffinity topology.kubernetes.io/zone
+[search-operator][SecurityPolicy][runAsNonRootSetToFalse] RunAsNonRoot is not true
+[search-operator][SecurityPolicy][securityContextSet] Container 'search-operator': missing SecurityContext
